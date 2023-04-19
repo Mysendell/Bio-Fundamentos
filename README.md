@@ -1,4 +1,4 @@
-# Trabalho-lpw
+# (Nome do Site)
 Site sobre biologia feito para a disciplina de Programaçao para a web.
 
 Feito por:
