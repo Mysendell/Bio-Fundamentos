@@ -3,11 +3,19 @@ header{
     display: flex;
     justify-content: space-evenly;
     gap: 1%;
-    align-items: center;
-    height:10vh;
+    height:8vh;
     width: 100%;
-    font-size: 4vmin;
+    font-size: 3vmin;
     border-bottom: 0.5vmin gray solid;
+}
+
+a:not(.logo){
+    line-height: 8vh;
+    height: inherit;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-left: solid white 0.5vmin;
+    border-right: solid white 0.5vmin;
 }
 
 a:link{
@@ -16,7 +24,6 @@ a:link{
 }
 
 a:hover{
-    font-size: 110%;
     text-decoration: underline;
 }
 
@@ -25,8 +32,10 @@ a:visited{
 }
 
 .logo{
+    margin-top: auto;
+    margin-bottom: auto ;
     max-width: 9vw;
-    max-height: 8.5vh;
+    max-height: 7vh;
 }
 
 .logo img{
@@ -40,7 +49,15 @@ article{
     border: 0.5vmin solid darkgray;
     text-align: left;
     word-wrap: break-word;
-    font-size: x-large;
+    font-size: large;
+}
+
+h1{
+    font-size: 200%;
+}
+
+h2{
+    font-size: 150%;
 }
 
 .planta{
