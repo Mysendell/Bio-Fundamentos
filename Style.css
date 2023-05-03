@@ -1,15 +1,15 @@
 header{
     background-color: green;
     display: flex;
-    justify-content: space-evenly;
-    gap: 1%;
+    justify-content: center;
+    gap: 7%;
     height:8vh;
     width: 100%;
     font-size: 3vmin;
     border-bottom: 0.5vmin gray solid;
 }
 
-a:not(.logo){
+.page:not(.logo){
     line-height: 8vh;
     height: inherit;
     padding-left: 1%;
@@ -18,16 +18,16 @@ a:not(.logo){
     border-right: solid white 0.5vmin;
 }
 
-a:link{
+.page:link{
     color: white;
     text-decoration: none;
 }
 
-a:hover{
+.page:hover{
     text-decoration: underline;
 }
 
-a:visited{
+.page:visited{
     color: white;
 }
 
@@ -50,6 +50,7 @@ article{
     text-align: left;
     word-wrap: break-word;
     font-size: large;
+    clear:left;
 }
 
 h1{
@@ -60,23 +61,32 @@ h2{
     font-size: 150%;
 }
 
-.planta{
+.planta {
     margin: 2% 0px;
 }
 
-h1, h2{
+h1, h2, dt {
     font-family: "Source Serif Pro", 'Times New Roman', Times, serif;
 }
-p, figcaption, a{
+p, figcaption, a {
     font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     margin: 0 0;
     min-height: 100vh;
     max-width: 100vw;
 }
 
-img{
+img {
     display: inline-block;
+}
+
+figure {
+    float:left;
+}
+
+dt {
+    font-size: x-large;
+    font-weight: bold;
 }
