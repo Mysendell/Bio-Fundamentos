@@ -2,6 +2,7 @@ header{
     background-color: green;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 7%;
     height:8vh;
     width: 100%;
@@ -10,12 +11,12 @@ header{
 }
 
 .page:not(.logo){
-    line-height: 8vh;
-    height: inherit;
+    line-height: 6vh;
+    height: 6vh;
     padding-left: 1%;
     padding-right: 1%;
-    border-left: solid white 0.5vmin;
-    border-right: solid white 0.5vmin;
+    border-left: solid white 0.4vmin;
+    border-right: solid white 0.4vmin;
 }
 
 .page:link{
@@ -65,10 +66,10 @@ h2{
     margin: 2% 0px;
 }
 
-h1, h2, dt {
+h1, h2, dt, h3 {
     font-family: "Source Serif Pro", 'Times New Roman', Times, serif;
 }
-p, figcaption, a {
+p, figcaption, a, ol, ul{
     font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
 }
 
@@ -86,7 +87,7 @@ figure {
     float:left;
 }
 
-dt {
+dt, h3{
     font-size: x-large;
     font-weight: bold;
 }
