@@ -10,6 +10,24 @@ header{
     border-bottom: 0.5vmin gray solid;
 }
 
+article ::selection{
+    background-color: darkgreen;
+    color: white;
+}
+
+nav a{
+    color: green;
+}
+
+section {
+    max-height: inherit;
+    max-width: inherit;
+}
+
+nav a:hover{
+    color: darkgreen;
+}
+
 .page:not(.logo){
     line-height: 6vh;
     height: 6vh;
@@ -69,11 +87,12 @@ h2{
 h1, h2, dt, h3 {
     font-family: "Source Serif Pro", 'Times New Roman', Times, serif;
 }
-p, figcaption, a, ol, ul{
+p, figcaption, a, ol, ul, dd{
     font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
 }
 
 body {
+    background-color: rgb(225, 225, 225);
     margin: 0 0;
     min-height: 100vh;
     max-width: 100vw;
@@ -84,6 +103,7 @@ img {
 }
 
 figure {
+    display: block;
     float:left;
 }
 
