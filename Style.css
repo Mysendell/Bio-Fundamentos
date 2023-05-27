@@ -111,3 +111,13 @@ dt, h3{
     font-size: x-large;
     font-weight: bold;
 }
+/*leo*/
+#fogo{
+     color: rgb(120, 31, 31);
+}
+#rocks{
+    width: 30vw;
+    height: 22vh;
+    float: right;
+    clear: left;
+}
