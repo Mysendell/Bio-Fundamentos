@@ -1,4 +1,4 @@
-# (Nome do Site)
+# Bio Fundamentos
 Site sobre biologia feito para a disciplina de Programaçao para a web.
 
 Feito por:
