@@ -8,7 +8,6 @@ header{
     gap: 7%;
     height:8vh;
     width: 100%;
-    font-size: 3vmin;
     border-bottom: 0.5vmin gray solid;
     z-index: 2;
 }
@@ -32,12 +31,11 @@ nav a:hover{
 }
 
 .page:not(.logo){
-    line-height: 6vh;
-    height: 6vh;
+    line-height: 4vh;
+    width: 13vw;
     padding-left: 1%;
     padding-right: 1%; 
-    font-size: 110%;
-    transition: font-size 0.1s ease-in;
+    font-size: 3.3vmin;
 }
 
 .page:link{
@@ -46,8 +44,7 @@ nav a:hover{
 }
 
 .page:hover{
-    font-size: larger;
-    border-bottom: solid white 0.4vmin;
+    text-decoration: underline;
 }   
 
 .page:visited{
@@ -77,11 +74,11 @@ article{
 }
 
 h1{
-    font-size: 200%;
+    font-size: 7vmin;
 }
 
 h2{
-    font-size: 150%;
+    font-size: 5.1vmin;
 }
 
 .planta {
@@ -106,39 +103,41 @@ img {
     display: inline-block;
 }
 
+#clorofila img{
+    max-width: 60vw;
+    max-height: 60vh;
+}
+
 #clorofila {
     display: block;
     float:left;
 }
 
-#cursed img{
-    width: 50vw;
+#cearense{
+    height: 90%;
+    width: 90%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .efeito{
     animation: rodar 6s linear 0s infinite;
-    width: 30vmin;
-    height:30vmin;
+    width: 60%;
     display: block;
 }
 
-#efeito1{
-    position: absolute;
-    top: 50%;
-    left: 5%
-}
-
-#efeito2{
-    position: absolute;
-    top: 50%;
-    right: 5%;
-}
-
 #cursed{
+    margin: 0;
+    display: grid;
+    grid-template:
+    "rotate1 main rotate2"
+        ". text ." / 1fr 2fr 1fr;
+    justify-items: center;
+    align-items: center;
     text-align: center;
+}
+
+#cursed figcaption{
+    grid-area: text;
 }
 
 dt, h3{
