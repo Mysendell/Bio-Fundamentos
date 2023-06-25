@@ -1,4 +1,6 @@
 header{
+    position: sticky;
+    top: 0;
     background-color: green;
     display: flex;
     justify-content: center;
@@ -8,9 +10,10 @@ header{
     width: 100%;
     font-size: 3vmin;
     border-bottom: 0.5vmin gray solid;
+    z-index: 2;
 }
 
-article ::selection{
+body ::selection{
     background-color: darkgreen;
     color: white;
 }
@@ -32,9 +35,9 @@ nav a:hover{
     line-height: 6vh;
     height: 6vh;
     padding-left: 1%;
-    padding-right: 1%;
-    border-left: solid white 0.4vmin;
-    border-right: solid white 0.4vmin;
+    padding-right: 1%; 
+    font-size: 110%;
+    transition: font-size 0.1s ease-in;
 }
 
 .page:link{
@@ -43,8 +46,9 @@ nav a:hover{
 }
 
 .page:hover{
-    text-decoration: underline;
-}
+    font-size: larger;
+    border-bottom: solid white 0.4vmin;
+}   
 
 .page:visited{
     color: white;
@@ -92,7 +96,7 @@ p, figcaption, a, ol, ul, dd{
 }
 
 body {
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(255, 253, 253);
     margin: 0 0;
     min-height: 100vh;
     max-width: 100vw;
@@ -102,9 +106,39 @@ img {
     display: inline-block;
 }
 
-figure {
+#clorofila {
     display: block;
     float:left;
+}
+
+#cursed img{
+    width: 50vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.efeito{
+    animation: rodar 6s linear 0s infinite;
+    width: 30vmin;
+    height:30vmin;
+    display: block;
+}
+
+#efeito1{
+    position: absolute;
+    top: 50%;
+    left: 5%
+}
+
+#efeito2{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+
+#cursed{
+    text-align: center;
 }
 
 dt, h3{
@@ -120,4 +154,15 @@ dt, h3{
     height: 22vh;
     float: right;
     clear: left;
+}
+
+.particula{
+    position: fixed;
+    transition: all 5s linear;
+    
+}
+
+@keyframes rodar {
+    from {transform: rotateZ(1turn);}
+  to {transform: rotateZ(2turn);}
 }
