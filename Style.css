@@ -149,10 +149,11 @@ dt, h3{
      color: rgb(120, 31, 31);
 }
 #rocks{
-    width: 30vw;
+    width: 200px;
     height: 22vh;
     float: right;
     clear: left;
+    margin-right: 50px;
 }
 
 .particula{
