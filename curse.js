@@ -26,6 +26,7 @@ if (choice == 1) {
     text.textContent="Por muito tempo eu fiquei preso, mas você finalmente me libertou. Eu lhe agradeço! Juntos tranformaremos esse mundo, apenas eu e você...";
 }
 img[0].src = image;
+img[0].style.borderRadius = "40%";
 img[2].src = image;
 img[3].src = particula;
 img[1].src = particula;
